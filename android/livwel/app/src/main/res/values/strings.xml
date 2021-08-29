@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Livwel</string>
+    <string name="temperature">Temperature</string>
+    <string name="hello">hello</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

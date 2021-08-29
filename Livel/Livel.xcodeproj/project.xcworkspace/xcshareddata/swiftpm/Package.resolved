@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": "master",
+          "revision": "c38feeb32cd728928da82ecec6fca43f398dfe22",
+          "version": null
+        }
+      },
+      {
+        "package": "JWTDecode",
+        "repositoryURL": "https://github.com/auth0/JWTDecode.swift.git",
+        "state": {
+          "branch": null,
+          "revision": "22e3d174e9df2962f0268a31dac45e5ea54a6e62",
+          "version": "2.6.1"
+        }
+      },
+      {
+        "package": "SwiftMQTT",
+        "repositoryURL": "https://github.com/aciidb0mb3r/SwiftMQTT.git",
+        "state": {
+          "branch": null,
+          "revision": "e412d414fbc03cabcee7fcbc8432aa1efb558c94",
+          "version": "3.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

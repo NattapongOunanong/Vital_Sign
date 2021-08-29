@@ -1,0 +1,5 @@
+url='3.0.54.110'
+port=8082
+username="mqtt"
+password="12345"
+publisherTopic

@@ -1,0 +1,725 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB6E670826A95F01005C7E3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E670726A95F01005C7E3A /* AppDelegate.swift */; };
+		DB6E670A26A95F01005C7E3A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E670926A95F01005C7E3A /* SceneDelegate.swift */; };
+		DB6E670C26A95F01005C7E3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E670B26A95F01005C7E3A /* ViewController.swift */; };
+		DB6E670F26A95F01005C7E3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6E670D26A95F01005C7E3A /* Main.storyboard */; };
+		DB6E671226A95F01005C7E3A /* Livel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB6E671026A95F01005C7E3A /* Livel.xcdatamodeld */; };
+		DB6E671426A95F02005C7E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB6E671326A95F02005C7E3A /* Assets.xcassets */; };
+		DB6E671726A95F02005C7E3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6E671526A95F02005C7E3A /* LaunchScreen.storyboard */; };
+		DB6E672226A95F02005C7E3A /* LivelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E672126A95F02005C7E3A /* LivelTests.swift */; };
+		DB6E672C26A95F02005C7E3A /* LivelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E672B26A95F02005C7E3A /* LivelUITests.swift */; };
+		DB6E673926B3E83B005C7E3A /* Serializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E673826B3E83B005C7E3A /* Serializer.swift */; };
+		DB6E674726B92E34005C7E3A /* SwiftMQTT in Frameworks */ = {isa = PBXBuildFile; productRef = DB6E674626B92E34005C7E3A /* SwiftMQTT */; };
+		DBA51BF226C39395009B31D1 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA51BF126C39395009B31D1 /* StartViewController.swift */; };
+		DBA51BF426C39A5F009B31D1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA51BF326C39A5F009B31D1 /* LoginViewController.swift */; };
+		DBA51BF626C39AB5009B31D1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA51BF526C39AB5009B31D1 /* SignUpViewController.swift */; };
+		DBA51C0826C64C12009B31D1 /* JWTDecode in Frameworks */ = {isa = PBXBuildFile; productRef = DBA51C0726C64C12009B31D1 /* JWTDecode */; };
+		DBA51C1326CA30A3009B31D1 /* RestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA51C1226CA30A3009B31D1 /* RestAPI.swift */; };
+		DBA51C1626CB9363009B31D1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DBA51C1526CB9363009B31D1 /* Alamofire */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB6E671E26A95F02005C7E3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB6E66FC26A95F01005C7E3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB6E670326A95F01005C7E3A;
+			remoteInfo = Livel;
+		};
+		DB6E672826A95F02005C7E3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB6E66FC26A95F01005C7E3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB6E670326A95F01005C7E3A;
+			remoteInfo = Livel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB6E670426A95F01005C7E3A /* Livel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Livel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6E670726A95F01005C7E3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB6E670926A95F01005C7E3A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DB6E670B26A95F01005C7E3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB6E670E26A95F01005C7E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB6E671126A95F01005C7E3A /* Livel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Livel.xcdatamodel; sourceTree = "<group>"; };
+		DB6E671326A95F02005C7E3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB6E671626A95F02005C7E3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB6E671826A95F02005C7E3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB6E671D26A95F02005C7E3A /* LivelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LivelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6E672126A95F02005C7E3A /* LivelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivelTests.swift; sourceTree = "<group>"; };
+		DB6E672726A95F02005C7E3A /* LivelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LivelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6E672B26A95F02005C7E3A /* LivelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivelUITests.swift; sourceTree = "<group>"; };
+		DB6E673826B3E83B005C7E3A /* Serializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serializer.swift; sourceTree = "<group>"; };
+		DBA51BF126C39395009B31D1 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		DBA51BF326C39A5F009B31D1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DBA51BF526C39AB5009B31D1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		DBA51C1226CA30A3009B31D1 /* RestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPI.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB6E670126A95F01005C7E3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA51C1626CB9363009B31D1 /* Alamofire in Frameworks */,
+				DB6E674726B92E34005C7E3A /* SwiftMQTT in Frameworks */,
+				DBA51C0826C64C12009B31D1 /* JWTDecode in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6E671A26A95F02005C7E3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6E672426A95F02005C7E3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB6E66FB26A95F01005C7E3A = {
+			isa = PBXGroup;
+			children = (
+				DB6E670626A95F01005C7E3A /* Livel */,
+				DB6E672026A95F02005C7E3A /* LivelTests */,
+				DB6E672A26A95F02005C7E3A /* LivelUITests */,
+				DB6E670526A95F01005C7E3A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB6E670526A95F01005C7E3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB6E670426A95F01005C7E3A /* Livel.app */,
+				DB6E671D26A95F02005C7E3A /* LivelTests.xctest */,
+				DB6E672726A95F02005C7E3A /* LivelUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB6E670626A95F01005C7E3A /* Livel */ = {
+			isa = PBXGroup;
+			children = (
+				DB6E670726A95F01005C7E3A /* AppDelegate.swift */,
+				DB6E673826B3E83B005C7E3A /* Serializer.swift */,
+				DB6E670926A95F01005C7E3A /* SceneDelegate.swift */,
+				DB6E670B26A95F01005C7E3A /* ViewController.swift */,
+				DBA51BF126C39395009B31D1 /* StartViewController.swift */,
+				DB6E670D26A95F01005C7E3A /* Main.storyboard */,
+				DBA51BF326C39A5F009B31D1 /* LoginViewController.swift */,
+				DBA51BF526C39AB5009B31D1 /* SignUpViewController.swift */,
+				DB6E671326A95F02005C7E3A /* Assets.xcassets */,
+				DB6E671526A95F02005C7E3A /* LaunchScreen.storyboard */,
+				DB6E671826A95F02005C7E3A /* Info.plist */,
+				DB6E671026A95F01005C7E3A /* Livel.xcdatamodeld */,
+				DBA51C1226CA30A3009B31D1 /* RestAPI.swift */,
+			);
+			path = Livel;
+			sourceTree = "<group>";
+		};
+		DB6E672026A95F02005C7E3A /* LivelTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB6E672126A95F02005C7E3A /* LivelTests.swift */,
+			);
+			path = LivelTests;
+			sourceTree = "<group>";
+		};
+		DB6E672A26A95F02005C7E3A /* LivelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DB6E672B26A95F02005C7E3A /* LivelUITests.swift */,
+			);
+			path = LivelUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB6E670326A95F01005C7E3A /* Livel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB6E672F26A95F02005C7E3A /* Build configuration list for PBXNativeTarget "Livel" */;
+			buildPhases = (
+				DB6E670026A95F01005C7E3A /* Sources */,
+				DB6E670126A95F01005C7E3A /* Frameworks */,
+				DB6E670226A95F01005C7E3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Livel;
+			packageProductDependencies = (
+				DB6E674626B92E34005C7E3A /* SwiftMQTT */,
+				DBA51C0726C64C12009B31D1 /* JWTDecode */,
+				DBA51C1526CB9363009B31D1 /* Alamofire */,
+			);
+			productName = Livel;
+			productReference = DB6E670426A95F01005C7E3A /* Livel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB6E671C26A95F02005C7E3A /* LivelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB6E673226A95F02005C7E3A /* Build configuration list for PBXNativeTarget "LivelTests" */;
+			buildPhases = (
+				DB6E671926A95F02005C7E3A /* Sources */,
+				DB6E671A26A95F02005C7E3A /* Frameworks */,
+				DB6E671B26A95F02005C7E3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB6E671F26A95F02005C7E3A /* PBXTargetDependency */,
+			);
+			name = LivelTests;
+			productName = LivelTests;
+			productReference = DB6E671D26A95F02005C7E3A /* LivelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DB6E672626A95F02005C7E3A /* LivelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB6E673526A95F02005C7E3A /* Build configuration list for PBXNativeTarget "LivelUITests" */;
+			buildPhases = (
+				DB6E672326A95F02005C7E3A /* Sources */,
+				DB6E672426A95F02005C7E3A /* Frameworks */,
+				DB6E672526A95F02005C7E3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB6E672926A95F02005C7E3A /* PBXTargetDependency */,
+			);
+			name = LivelUITests;
+			productName = LivelUITests;
+			productReference = DB6E672726A95F02005C7E3A /* LivelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB6E66FC26A95F01005C7E3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					DB6E670326A95F01005C7E3A = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					DB6E671C26A95F02005C7E3A = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = DB6E670326A95F01005C7E3A;
+					};
+					DB6E672626A95F02005C7E3A = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = DB6E670326A95F01005C7E3A;
+					};
+				};
+			};
+			buildConfigurationList = DB6E66FF26A95F01005C7E3A /* Build configuration list for PBXProject "Livel" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB6E66FB26A95F01005C7E3A;
+			packageReferences = (
+				DB6E674526B92E34005C7E3A /* XCRemoteSwiftPackageReference "SwiftMQTT" */,
+				DBA51C0626C64C12009B31D1 /* XCRemoteSwiftPackageReference "JWTDecode.swift" */,
+				DBA51C1426CB9363009B31D1 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = DB6E670526A95F01005C7E3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB6E670326A95F01005C7E3A /* Livel */,
+				DB6E671C26A95F02005C7E3A /* LivelTests */,
+				DB6E672626A95F02005C7E3A /* LivelUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB6E670226A95F01005C7E3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6E671726A95F02005C7E3A /* LaunchScreen.storyboard in Resources */,
+				DB6E671426A95F02005C7E3A /* Assets.xcassets in Resources */,
+				DB6E670F26A95F01005C7E3A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6E671B26A95F02005C7E3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6E672526A95F02005C7E3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB6E670026A95F01005C7E3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA51BF426C39A5F009B31D1 /* LoginViewController.swift in Sources */,
+				DB6E670C26A95F01005C7E3A /* ViewController.swift in Sources */,
+				DBA51BF626C39AB5009B31D1 /* SignUpViewController.swift in Sources */,
+				DB6E670826A95F01005C7E3A /* AppDelegate.swift in Sources */,
+				DB6E671226A95F01005C7E3A /* Livel.xcdatamodeld in Sources */,
+				DB6E670A26A95F01005C7E3A /* SceneDelegate.swift in Sources */,
+				DBA51C1326CA30A3009B31D1 /* RestAPI.swift in Sources */,
+				DB6E673926B3E83B005C7E3A /* Serializer.swift in Sources */,
+				DBA51BF226C39395009B31D1 /* StartViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6E671926A95F02005C7E3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6E672226A95F02005C7E3A /* LivelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB6E672326A95F02005C7E3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6E672C26A95F02005C7E3A /* LivelUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB6E671F26A95F02005C7E3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB6E670326A95F01005C7E3A /* Livel */;
+			targetProxy = DB6E671E26A95F02005C7E3A /* PBXContainerItemProxy */;
+		};
+		DB6E672926A95F02005C7E3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB6E670326A95F01005C7E3A /* Livel */;
+			targetProxy = DB6E672826A95F02005C7E3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB6E670D26A95F01005C7E3A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB6E670E26A95F01005C7E3A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB6E671526A95F02005C7E3A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB6E671626A95F02005C7E3A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB6E672D26A95F02005C7E3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB6E672E26A95F02005C7E3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB6E673026A95F02005C7E3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RLULAYJ74C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Livel/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NSTDA.Livel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB6E673126A95F02005C7E3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RLULAYJ74C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Livel/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NSTDA.Livel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DB6E673326A95F02005C7E3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RLULAYJ74C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NSTDA.LivelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Livel.app/Livel";
+			};
+			name = Debug;
+		};
+		DB6E673426A95F02005C7E3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RLULAYJ74C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NSTDA.LivelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Livel.app/Livel";
+			};
+			name = Release;
+		};
+		DB6E673626A95F02005C7E3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RLULAYJ74C;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NSTDA.LivelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Livel;
+			};
+			name = Debug;
+		};
+		DB6E673726A95F02005C7E3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RLULAYJ74C;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NSTDA.LivelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Livel;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB6E66FF26A95F01005C7E3A /* Build configuration list for PBXProject "Livel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6E672D26A95F02005C7E3A /* Debug */,
+				DB6E672E26A95F02005C7E3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB6E672F26A95F02005C7E3A /* Build configuration list for PBXNativeTarget "Livel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6E673026A95F02005C7E3A /* Debug */,
+				DB6E673126A95F02005C7E3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB6E673226A95F02005C7E3A /* Build configuration list for PBXNativeTarget "LivelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6E673326A95F02005C7E3A /* Debug */,
+				DB6E673426A95F02005C7E3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB6E673526A95F02005C7E3A /* Build configuration list for PBXNativeTarget "LivelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB6E673626A95F02005C7E3A /* Debug */,
+				DB6E673726A95F02005C7E3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DB6E674526B92E34005C7E3A /* XCRemoteSwiftPackageReference "SwiftMQTT" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aciidb0mb3r/SwiftMQTT.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		DBA51C0626C64C12009B31D1 /* XCRemoteSwiftPackageReference "JWTDecode.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/auth0/JWTDecode.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		DBA51C1426CB9363009B31D1 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB6E674626B92E34005C7E3A /* SwiftMQTT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB6E674526B92E34005C7E3A /* XCRemoteSwiftPackageReference "SwiftMQTT" */;
+			productName = SwiftMQTT;
+		};
+		DBA51C0726C64C12009B31D1 /* JWTDecode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DBA51C0626C64C12009B31D1 /* XCRemoteSwiftPackageReference "JWTDecode.swift" */;
+			productName = JWTDecode;
+		};
+		DBA51C1526CB9363009B31D1 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DBA51C1426CB9363009B31D1 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		DB6E671026A95F01005C7E3A /* Livel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DB6E671126A95F01005C7E3A /* Livel.xcdatamodel */,
+			);
+			currentVersion = DB6E671126A95F01005C7E3A /* Livel.xcdatamodel */;
+			path = Livel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DB6E66FC26A95F01005C7E3A /* Project object */;
+}
