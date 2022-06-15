@@ -14,6 +14,7 @@ let bloodPressureUrl = "https://apidev.airpresense.tech/api/vitalsign/bloodpress
 let spo2Url = "https://apidev.airpresense.tech/api/vitalsign/spo2"
 let heartRateUrl = "https://apidev.airpresense.tech/api/vitalsign/heartrate"
 let rootUserUrl = "https://apidev.airpresense.tech/api/patient/user"
+let labTempUrl = "http://api.temperature.bangpra.airpresense.tech/api/kiosk/temperature"
 
 struct authResponse: Decodable {
     let id: Int
@@ -108,7 +109,7 @@ class RestAPI{
     }
     
     func postTemperature(params: Dictionary<String,Any>){
-        print(params)
+//        print(params)
         let userToken = tokenSecret.getToken.token
         let headers: HTTPHeaders = ["Authorization" : "Bearer "+userToken!+"",
                        "Content-Type": "application/json"]
@@ -132,7 +133,7 @@ class RestAPI{
                        "Content-Type": "application/json"]
         AF.request(bloodPressureUrl, method: .post, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON{
             (response) in
-            debugPrint(response)
+//            debugPrint(response)
             switch response.result
             {
             case .success:
@@ -165,6 +166,23 @@ class RestAPI{
         let headers: HTTPHeaders = ["Authorization" : "Bearer "+userToken!+"",
                        "Content-Type": "application/json"]
         AF.request(heartRateUrl, method: .post, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON{
+            (response) in
+            debugPrint(response)
+            switch response.result
+            {
+            case .success:
+                return
+                
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    func postLabTemp(params: Dictionary<String,Any>){
+        let userToken = tokenSecret.getToken.token
+        let headers: HTTPHeaders = ["Authorization" : "Bearer "+userToken!+"",
+                       "Content-Type": "application/json"]
+        AF.request(labTempUrl, method: .post, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON{
             (response) in
             debugPrint(response)
             switch response.result

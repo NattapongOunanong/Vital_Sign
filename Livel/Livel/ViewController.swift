@@ -35,6 +35,7 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
     var jsonPressure: Dictionary<String,Any>!
     var jsonSpo2: Dictionary<String,Any>!
     var jsonHr: Dictionary<String,Any>!
+    var jsonLabTemp: Dictionary<String, Any>!
     
     var thermalGunLabel: UILabel!
     var spo2Label: UILabel!
@@ -78,9 +79,7 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
     func connectGatt(peripheral: CBPeripheral){
         self.myPeripheral = peripheral
         self.myPeripheral.delegate = self
-
         self.centralManager.connect(peripheral, options: nil)
-        
     }
     
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
@@ -137,6 +136,8 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
             return
         }
         
+//        print(peripheral.name!)
+        
         switch devType {
             case "temp":
             if data.count < 15{
@@ -154,6 +155,15 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
         
         let tmpDictionary = serializer.serializerManager(deviceType: devType, data: data)
         updateVitalSign(deviceType: devType, data: tmpDictionary)
+        if devType == "temp"{
+            updateLabTemp(data: data, sensorName: peripheral)
+        }
+    }
+    
+    func updateLabTemp(data: Data, sensorName: CBPeripheral){
+        let dataArray = Array(data)
+        let sensorName = sensorName.name!
+        jsonLabTemp = serializer.serializeLabTemp(data: dataArray, sensorName: sensorName, kioskSerial: "Livel")
     }
 
     func updateVitalSign(deviceType: String, data: Dictionary<String, Any>){
@@ -163,7 +173,7 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
 //            tempVal.text = "\(data["temp"]!) \u{00b0}C"
             tempVal.text = "\(data["temperature"]!) \u{00b0}C"
         case "spo2":
-            print(data)
+//            print(data)
 //            let spo2Tmp = data["spo2"]! as! Dictionary<String, String>
 //            if data["spo2"] as! String == "--"{
 //                break
@@ -208,6 +218,7 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
         jsonPressure = ["None":"None"]
         jsonSpo2 = ["None":"None"]
         jsonHr = ["None":"None"]
+        jsonLabTemp = ["None":"None"]
         tempVal.text = "--"
         spo2Val.text = "--"
         spo2PulseVal.text = "--"
@@ -261,6 +272,8 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralDe
         api.postSpo2(params: jsonSpo2)
         api.postPressure(params: jsonPressure)
         api.postHeartRate(params: jsonHr)
+        api.postLabTemp(params: jsonLabTemp)
+
 //        Uncomment code below for mqtt protocol **************************************************************
 //        let jsonMsg = try! JSONSerialization.data(withJSONObject: payload as Any, options: .prettyPrinted)
 //        mqttSession.publish(jsonMsg, in: topic, delivering: .atLeastOnce, retain: false) { error in

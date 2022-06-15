@@ -24,6 +24,21 @@
 		DBA51C0826C64C12009B31D1 /* JWTDecode in Frameworks */ = {isa = PBXBuildFile; productRef = DBA51C0726C64C12009B31D1 /* JWTDecode */; };
 		DBA51C1326CA30A3009B31D1 /* RestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA51C1226CA30A3009B31D1 /* RestAPI.swift */; };
 		DBA51C1626CB9363009B31D1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DBA51C1526CB9363009B31D1 /* Alamofire */; };
+		DBDA917F26DDE475001507D7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA51BF326C39A5F009B31D1 /* LoginViewController.swift */; };
+		DBDA918026DDE475001507D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E670B26A95F01005C7E3A /* ViewController.swift */; };
+		DBDA918126DDE475001507D7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA51BF526C39AB5009B31D1 /* SignUpViewController.swift */; };
+		DBDA918226DDE475001507D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E670726A95F01005C7E3A /* AppDelegate.swift */; };
+		DBDA918326DDE475001507D7 /* Livel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB6E671026A95F01005C7E3A /* Livel.xcdatamodeld */; };
+		DBDA918426DDE475001507D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E670926A95F01005C7E3A /* SceneDelegate.swift */; };
+		DBDA918526DDE475001507D7 /* RestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA51C1226CA30A3009B31D1 /* RestAPI.swift */; };
+		DBDA918626DDE475001507D7 /* Serializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6E673826B3E83B005C7E3A /* Serializer.swift */; };
+		DBDA918726DDE475001507D7 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA51BF126C39395009B31D1 /* StartViewController.swift */; };
+		DBDA918926DDE475001507D7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DBDA917C26DDE475001507D7 /* Alamofire */; };
+		DBDA918A26DDE475001507D7 /* SwiftMQTT in Frameworks */ = {isa = PBXBuildFile; productRef = DBDA917826DDE475001507D7 /* SwiftMQTT */; };
+		DBDA918B26DDE475001507D7 /* JWTDecode in Frameworks */ = {isa = PBXBuildFile; productRef = DBDA917A26DDE475001507D7 /* JWTDecode */; };
+		DBDA918D26DDE475001507D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6E671526A95F02005C7E3A /* LaunchScreen.storyboard */; };
+		DBDA918E26DDE475001507D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB6E671326A95F02005C7E3A /* Assets.xcassets */; };
+		DBDA918F26DDE475001507D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6E670D26A95F01005C7E3A /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +77,8 @@
 		DBA51BF326C39A5F009B31D1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DBA51BF526C39AB5009B31D1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		DBA51C1226CA30A3009B31D1 /* RestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPI.swift; sourceTree = "<group>"; };
+		DBDA919326DDE475001507D7 /* Livel Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Livel Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBDA919426DDE476001507D7 /* Livel copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Livel copy-Info.plist"; path = "/Users/nattapongounanong/Desktop/Vital_Sign/Livel/Livel copy-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +106,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DBDA918826DDE475001507D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBDA918926DDE475001507D7 /* Alamofire in Frameworks */,
+				DBDA918A26DDE475001507D7 /* SwiftMQTT in Frameworks */,
+				DBDA918B26DDE475001507D7 /* JWTDecode in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -99,6 +126,7 @@
 				DB6E672026A95F02005C7E3A /* LivelTests */,
 				DB6E672A26A95F02005C7E3A /* LivelUITests */,
 				DB6E670526A95F01005C7E3A /* Products */,
+				DBDA919426DDE476001507D7 /* Livel copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +136,7 @@
 				DB6E670426A95F01005C7E3A /* Livel.app */,
 				DB6E671D26A95F02005C7E3A /* LivelTests.xctest */,
 				DB6E672726A95F02005C7E3A /* LivelUITests.xctest */,
+				DBDA919326DDE475001507D7 /* Livel Dev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -209,6 +238,28 @@
 			productReference = DB6E672726A95F02005C7E3A /* LivelUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		DBDA917726DDE475001507D7 /* Livel Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBDA919026DDE475001507D7 /* Build configuration list for PBXNativeTarget "Livel Dev" */;
+			buildPhases = (
+				DBDA917E26DDE475001507D7 /* Sources */,
+				DBDA918826DDE475001507D7 /* Frameworks */,
+				DBDA918C26DDE475001507D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Livel Dev";
+			packageProductDependencies = (
+				DBDA917826DDE475001507D7 /* SwiftMQTT */,
+				DBDA917A26DDE475001507D7 /* JWTDecode */,
+				DBDA917C26DDE475001507D7 /* Alamofire */,
+			);
+			productName = Livel;
+			productReference = DBDA919326DDE475001507D7 /* Livel Dev.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -253,6 +304,7 @@
 				DB6E670326A95F01005C7E3A /* Livel */,
 				DB6E671C26A95F02005C7E3A /* LivelTests */,
 				DB6E672626A95F02005C7E3A /* LivelUITests */,
+				DBDA917726DDE475001507D7 /* Livel Dev */,
 			);
 		};
 /* End PBXProject section */
@@ -279,6 +331,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBDA918C26DDE475001507D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBDA918D26DDE475001507D7 /* LaunchScreen.storyboard in Resources */,
+				DBDA918E26DDE475001507D7 /* Assets.xcassets in Resources */,
+				DBDA918F26DDE475001507D7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +376,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB6E672C26A95F02005C7E3A /* LivelUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBDA917E26DDE475001507D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBDA917F26DDE475001507D7 /* LoginViewController.swift in Sources */,
+				DBDA918026DDE475001507D7 /* ViewController.swift in Sources */,
+				DBDA918126DDE475001507D7 /* SignUpViewController.swift in Sources */,
+				DBDA918226DDE475001507D7 /* AppDelegate.swift in Sources */,
+				DBDA918326DDE475001507D7 /* Livel.xcdatamodeld in Sources */,
+				DBDA918426DDE475001507D7 /* SceneDelegate.swift in Sources */,
+				DBDA918526DDE475001507D7 /* RestAPI.swift in Sources */,
+				DBDA918626DDE475001507D7 /* Serializer.swift in Sources */,
+				DBDA918726DDE475001507D7 /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,26 +552,29 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RLULAYJ74C;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 8FPB3CSA3L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Livel/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app uses bluetooth for my sensor";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "This app uses bluetooth for my sensor";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = NSTDA.Livel;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isarasoftware.livewell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -503,26 +584,29 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RLULAYJ74C;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 8FPB3CSA3L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Livel/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app uses bluetooth for my sensor";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "This app uses bluetooth for my sensor";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = NSTDA.Livel;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.isarasoftware.livewell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -622,6 +706,66 @@
 			};
 			name = Release;
 		};
+		DBDA919126DDE475001507D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = RLULAYJ74C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Livel copy-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NSTDA.Livel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DBDA919226DDE475001507D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = RLULAYJ74C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Livel copy-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NSTDA.Livel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -661,6 +805,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		DBDA919026DDE475001507D7 /* Build configuration list for PBXNativeTarget "Livel Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBDA919126DDE475001507D7 /* Debug */,
+				DBDA919226DDE475001507D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -688,6 +841,30 @@
 				kind = branch;
 			};
 		};
+		DBDA917926DDE475001507D7 /* XCRemoteSwiftPackageReference "SwiftMQTT" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aciidb0mb3r/SwiftMQTT.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		DBDA917B26DDE475001507D7 /* XCRemoteSwiftPackageReference "JWTDecode.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/auth0/JWTDecode.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		DBDA917D26DDE475001507D7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -704,6 +881,21 @@
 		DBA51C1526CB9363009B31D1 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DBA51C1426CB9363009B31D1 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		DBDA917826DDE475001507D7 /* SwiftMQTT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DBDA917926DDE475001507D7 /* XCRemoteSwiftPackageReference "SwiftMQTT" */;
+			productName = SwiftMQTT;
+		};
+		DBDA917A26DDE475001507D7 /* JWTDecode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DBDA917B26DDE475001507D7 /* XCRemoteSwiftPackageReference "JWTDecode.swift" */;
+			productName = JWTDecode;
+		};
+		DBDA917C26DDE475001507D7 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DBDA917D26DDE475001507D7 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */

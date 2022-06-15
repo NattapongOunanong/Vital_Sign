@@ -2,21 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSExceptionDomains</key>
-		<dict>
-			<key>api.temperature.bangpra.airpresense.tech</key>
-			<dict>
-				<key>NSExceptionAllowsInsecureHTTPLoads</key>
-				<true/>
-				<key>NSIncludesSubdomains</key>
-				<true/>
-			</dict>
-		</dict>
-	</dict>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>This app uses bluetooth for my sensor</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>This app uses bluetooth for my sensor</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -36,5 +29,7 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UIRequiresFullScreen</key>
+	<true/>
 </dict>
 </plist>

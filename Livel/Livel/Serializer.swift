@@ -41,6 +41,16 @@ struct Serializer{
         ] as [String : Any]
         return jsonMsg
     }
+    func serializeLabTemp(data: Array<UInt8>, sensorName: String, kioskSerial: String)->Dictionary<String,Any>{
+        let temp = decodeJXB_TTM(data: data)
+        let jsonMsg = ["kioskSerial":tokenSecret.getToken.patientId!,
+                       "sensorSerial":sensorName,
+                       "sensorName":"Rycom",
+                       "temperature":temp,
+                       "timestamp":getTimestamp()
+        ] as [String : Any]
+        return jsonMsg
+    }
     func serializeSpo2(data: Array<UInt8>) -> Dictionary<String,Any>{
         let result = decodeBerrryMed(data: data)!
 //        guard let cellularIp = getAddress(for: .cellular) else { return }
